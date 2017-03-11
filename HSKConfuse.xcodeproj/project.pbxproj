@@ -13,6 +13,8 @@
 		EFE1149D1E73C4AE005683BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE1149B1E73C4AE005683BA /* Main.storyboard */; };
 		EFE1149F1E73C4AE005683BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFE1149E1E73C4AE005683BA /* Assets.xcassets */; };
 		EFE114A21E73C4AE005683BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE114A01E73C4AE005683BA /* LaunchScreen.storyboard */; };
+		EFE114AE1E73C532005683BA /* confuse.sh in Resources */ = {isa = PBXBuildFile; fileRef = EFE114AC1E73C532005683BA /* confuse.sh */; };
+		EFE114AF1E73C532005683BA /* func.list in Resources */ = {isa = PBXBuildFile; fileRef = EFE114AD1E73C532005683BA /* func.list */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		EFE1149E1E73C4AE005683BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFE114A11E73C4AE005683BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFE114A31E73C4AE005683BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFE114AB1E73C532005683BA /* codeObfuscation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codeObfuscation.h; sourceTree = "<group>"; };
+		EFE114AC1E73C532005683BA /* confuse.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = confuse.sh; sourceTree = "<group>"; };
+		EFE114AD1E73C532005683BA /* func.list */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func.list; sourceTree = "<group>"; };
+		EFE114B01E73C54F005683BA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,7 @@
 				EFE1149E1E73C4AE005683BA /* Assets.xcassets */,
 				EFE114A01E73C4AE005683BA /* LaunchScreen.storyboard */,
 				EFE114A31E73C4AE005683BA /* Info.plist */,
+				EFE114A91E73C4EB005683BA /* Resource */,
 				EFE114921E73C4AE005683BA /* Supporting Files */,
 			);
 			path = HSKConfuse;
@@ -79,6 +86,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EFE114A91E73C4EB005683BA /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				EFE114AB1E73C532005683BA /* codeObfuscation.h */,
+				EFE114AC1E73C532005683BA /* confuse.sh */,
+				EFE114AD1E73C532005683BA /* func.list */,
+				EFE114B01E73C54F005683BA /* PrefixHeader.pch */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,6 +107,7 @@
 				EFE1148B1E73C4AE005683BA /* Sources */,
 				EFE1148C1E73C4AE005683BA /* Frameworks */,
 				EFE1148D1E73C4AE005683BA /* Resources */,
+				EFE114AA1E73C519005683BA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -138,12 +157,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFE114A21E73C4AE005683BA /* LaunchScreen.storyboard in Resources */,
+				EFE114AF1E73C532005683BA /* func.list in Resources */,
 				EFE1149F1E73C4AE005683BA /* Assets.xcassets in Resources */,
+				EFE114AE1E73C532005683BA /* confuse.sh in Resources */,
 				EFE1149D1E73C4AE005683BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EFE114AA1E73C519005683BA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = $PROJECT_DIR/HSKConfuse/Resource/confuse.sh;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EFE1148B1E73C4AE005683BA /* Sources */ = {
@@ -272,6 +309,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = HSKConfuse/Resource/PrefixHeader.pch;
 				INFOPLIST_FILE = HSKConfuse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YItong.HSKConfuse;
@@ -283,6 +322,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = HSKConfuse/Resource/PrefixHeader.pch;
 				INFOPLIST_FILE = HSKConfuse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YItong.HSKConfuse;
