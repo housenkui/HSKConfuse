@@ -10,6 +10,9 @@
    
 # 通过class-dump 反编译之后：Appdelegate 效果
 ![图片](http://upload-images.jianshu.io/upload_images/1485140-582bcb1447c76938.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-   [简书地址：http://www.jianshu.com/p/0d42e5c6361c](http://www.jianshu.com/p/0d42e5c6361c)
+# 通过class-dump 反编译之后：ViewController 效果
+![效果](http://upload-images.jianshu.io/upload_images/1485140-ba254eda8b20005e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+  
+  [简书地址：http://www.jianshu.com/p/0d42e5c6361c](http://www.jianshu.com/p/0d42e5c6361c)
     
     
