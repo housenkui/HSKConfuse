@@ -15,5 +15,7 @@
 ![效果](http://upload-images.jianshu.io/upload_images/1485140-ba254eda8b20005e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
   
   [简书地址：http://www.jianshu.com/p/0d42e5c6361c](http://www.jianshu.com/p/0d42e5c6361c)
+  ***
+      如果在使用过程中遇到BUG，希望你能Issues我，谢谢
     
     
