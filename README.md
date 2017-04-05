@@ -4,7 +4,8 @@ iOS代码混淆
 
     例如 “hsk_funtion1”； “hsk_funtion2”；“hsk_funtion3”；
     .......
+    ![shell文件](http://upload-images.jianshu.io/upload_images/1485140-22eacdbae71ab997.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
     
-    具体介绍可参考：http://www.jianshu.com/p/0d42e5c6361c
+    [简书地址：](http://www.jianshu.com/p/0d42e5c6361c)
     
     
