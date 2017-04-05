@@ -7,7 +7,7 @@
     
    
    ![shell文件](http://upload-images.jianshu.io/upload_images/1485140-22eacdbae71ab997.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-   ![添加脚本的文件路径](/Users/housenwen/Desktop/混淆09.png)
+   ![添加脚本的文件路径](http://upload-images.jianshu.io/upload_images/1485140-a55c20978ddbfbd9.png?imageMogr2/auto-orient/strip)
    
 # 通过class-dump 反编译之后：Appdelegate 效果
 ![图片](http://upload-images.jianshu.io/upload_images/1485140-582bcb1447c76938.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
