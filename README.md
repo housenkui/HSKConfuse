@@ -18,4 +18,6 @@
   ***
       如果在使用过程中遇到BUG，希望你能Issues我，谢谢
     
-    
+    
+另送一份ios自动打包脚本，放在项目根目录下，傻瓜版
+https://github.com/housenkui/autoComplie
